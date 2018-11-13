@@ -23,7 +23,7 @@ app.directive('candleStick', function ($compile) {
                 chart = new AmCharts.AmSerialChart();
                 chart.dataProvider = chartData;
                 chart.categoryField = "date";
-
+                chart.svgIcons = false;
                 // listen for dataUpdated event ad call "zoom" method then it happens
                 chart.addListener('dataUpdated', zoomChart);
                 // listen for zoomed event andcall "handleZoom" method then it happens

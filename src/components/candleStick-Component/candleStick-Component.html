@@ -1,5 +1,9 @@
-﻿<div>
-    <span>{{title}}</span>
+﻿<div class="row text-center" ng-show="isvisible">
+    <button class="btn btn-primary btn-sm" ng-click="switchView()">Click here switch to custom MM view</button>
+    <h2>{{title}}</h2>
+</div>
+
+<div>
     <p></p>
     <div>
         <candle-stick minperiod="{{minPeriod}}" chartdata="data"></candle-stick>
