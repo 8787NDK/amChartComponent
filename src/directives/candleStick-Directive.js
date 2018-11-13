@@ -3,7 +3,7 @@ app.directive('candleStick', function ($compile) {
     return {
         restrict: 'E',
         replace: true,
-        templateUrl: 'directives/templates/candleStick-Directive.html',
+        templateUrl: 'src/directives/templates/candleStick-Directive.html',
         scope: {
             minperiod: '@',
             chartdata: '='

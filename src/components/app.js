@@ -4,11 +4,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('/', {
         url: '/candleStick-default',
-        templateUrl: 'components/candleStick-Component/candleStick-Component.html',
+        templateUrl: 'src/components/candleStick-Component/candleStick-Component.html',
         controller: 'candleStick-Controller'
     }).state('/candleStick-custom', {
         url: '/candleStick-custom',
-        templateUrl: 'components/candleStick-Customized-Component/candleStick-Component.html',
+        templateUrl: 'src/components/candleStick-Customized-Component/candleStick-Component.html',
         controller: 'candleStick-Customized-Controller'
     })
     ;
